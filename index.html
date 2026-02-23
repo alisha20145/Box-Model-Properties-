@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Image styling for box model demonstration */
+        .pizza-img-right {
+            width: 170px;
+            height: 170px;
+            float: right;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            border: 5px solid #ffcc66; /* border example */
+            padding: 10px; /* padding example */
+            box-sizing: border-box; /* includes padding & border in width */
+        }
+
+        .pizza-img-left {
+            width: 170px;
+            height: 170px;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            border: 5px solid #66ccff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        hr {
+            clear: both; /* make sure content doesn't wrap around images */
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pizza Example - Right Image</h2>
+    <p>
+        <img src="pizza.jpg" alt="Pizza" class="pizza-img-right">
+        Pizza (Italian: ['pittsa], Neapolitan: ['pittsə]) is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta. A person who makes pizza is known as a pizzaiolo.
+    </p>
+
+    <hr>
+
+    <h2>Pizza Example - Left Image</h2>
+    <p>
+        <img src="pizza pepporini pizza.webp"Pizza" class="pizza-img-left">
+        Pizza (Italian: ['pittsa], Neapolitan: ['pittsə]) is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta.
+    </p>
+</body>
+</html>
